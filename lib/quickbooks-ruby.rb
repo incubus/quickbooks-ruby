@@ -6,7 +6,6 @@ require 'cgi'
 require 'uri'
 require 'date'
 require 'forwardable'
-require 'oauth2'
 require 'net/http/post/multipart'
 require 'quickbooks/util/collection'
 require 'quickbooks/util/logging'
@@ -14,11 +13,6 @@ require 'quickbooks/util/http_encoding_helper'
 require 'quickbooks/util/name_entity'
 require 'quickbooks/util/query_builder'
 require 'quickbooks/faraday/middleware/gzip'
-
-#== OAuth Responses
-require 'quickbooks/service/responses/oauth_http_response'
-require 'quickbooks/service/responses/methods'
-require 'quickbooks/service/responses/oauth2_http_response'
 
 #== Models
 require 'quickbooks/model/definition'
